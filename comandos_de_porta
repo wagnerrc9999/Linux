@@ -1,0 +1,36 @@
+\h
+
+http://127.0.0.1/phppgadmin/
+
+
+Portas no linhx para administradores de sistema
+
+primeiro comando:
+
+ para escaniar as portas até 6400 use esse comando
+
+nmap localhost
+
+ para saber qual serviço está rodando naquela porta
+
+netstat -nlptu
+
+
+netstat -nlptu | grep 80
+
+netstat -nlptu | grep 22
+
+netstat -nlptu | grep "pgadmin"
+
+
+
+comando Fuser 80/tcp
+
+fuser 80/tcp
+
+
+para ver as portas abertas
+
+lsof -l
+
+lsof -l :80
